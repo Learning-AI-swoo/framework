@@ -31,10 +31,11 @@
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
         .resource-btn {
-            transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
         .resource-btn:hover {
             transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
     </style>
 </head>
@@ -61,14 +62,31 @@
     <main class="main-content">
       <div class="container mx-auto px-6 py-16 md:py-24">
         <div class="text-center mb-16">
-            <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Five Core Domains</h3>
-            <p class="text-md text-gray-600 mt-2">Five pillars for responsible AI engagement in Traditional Chinese Medicine.</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Six Core Domains</h3>
+            <p class="text-md text-gray-600 mt-2">Six pillars for responsible AI engagement in Traditional Chinese Medicine.</p>
         </div>
 
         <!-- Grid of Domains (3x2 layout on large screens) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Domain 1: Transparency and Explainability -->
+            <!-- Domain 1: AI Literacy & Fundamentals -->
+            <div class="domain-card bg-white rounded-2xl shadow-lg overflow-hidden p-8">
+                 <div class="flex-shrink-0 mb-6 flex items-center">
+                    <div class="p-3 rounded-full bg-sky-100">
+                        <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.636-6.364l.707.707M19.071 19.071l-.707-.707M12 21v-1m-6.364-1.636l.707-.707M5.636 5.636l-.707-.707m12.728 12.728l.707.707M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 ml-4">AI Literacy & Fundamentals</h4>
+                </div>
+                <div class="flex-grow">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start"><span class="font-bold text-sky-500 mr-2 mt-1">&#10003;</span> Explain core AI concepts such as training data, model limits, and inference.</li>
+                        <li class="flex items-start"><span class="font-bold text-sky-500 mr-2 mt-1">&#10003;</span> Check AI output for clinical accuracy before use.</li>
+                        <li class="flex items-start"><span class="font-bold text-sky-500 mr-2 mt-1">&#10003;</span> Integrate AI‑generated information into clinical or operational workflows with appropriate human oversight.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Domain 2: Transparency and Explainability -->
             <div class="domain-card bg-white rounded-2xl shadow-lg overflow-hidden p-8">
                 <div class="flex-shrink-0 mb-6 flex items-center">
                     <div class="p-3 rounded-full bg-indigo-100">
@@ -78,14 +96,14 @@
                 </div>
                 <div class="flex-grow">
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="font-bold text-indigo-500 mr-2 mt-1">&#10003;</span> Clearly disclose AI use in patient care, administration, or research.</li>
+                        <li class="flex items-start"><span class="font-bold text-indigo-500 mr-2 mt-1">&#10003;</span> Disclose AI use in patient care, administration, and research within the appropriate documentation.</li>
+                        <li class="flex items-start"><span class="font-bold text-indigo-500 mr-2 mt-1">&#10003;</span> Communicate to patients, in plain language, when and how AI informs their care and decisions.</li>
                         <li class="flex items-start"><span class="font-bold text-indigo-500 mr-2 mt-1">&#10003;</span> Select AI tools that provide understandable and explainable outputs.</li>
-                        <li class="flex items-start"><span class="font-bold text-indigo-500 mr-2 mt-1">&#10003;</span> Communicate AI-generated insights to patients in accessible language.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Domain 2: Fairness and Inclusivity -->
+            <!-- Domain 3: Fairness and Inclusivity -->
             <div class="domain-card bg-white rounded-2xl shadow-lg overflow-hidden p-8">
                 <div class="flex-shrink-0 mb-6 flex items-center">
                     <div class="p-3 rounded-full bg-teal-100">
@@ -95,14 +113,14 @@
                 </div>
                 <div class="flex-grow">
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="font-bold text-teal-500 mr-2 mt-1">&#10003;</span> Evaluate AI tools for potential biases affecting different populations.</li>
-                        <li class="flex items-start"><span class="font-bold text-teal-500 mr-2 mt-1">&#10003;</span> Advocate for the use of diverse, representative datasets in AI development.</li>
-                        <li class="flex items-start"><span class="font-bold text-teal-500 mr-2 mt-1">&#10003;</span> Recognize when AI outputs may disadvantage or exclude vulnerable groups.</li>
+                        <li class="flex items-start"><span class="font-bold text-teal-500 mr-2 mt-1">&#10003;</span> Evaluate AI tools for potential biases that could affect different populations.</li>
+                        <li class="flex items-start"><span class="font-bold text-teal-500 mr-2 mt-1">&#10003;</span> Advocate for representative, diverse datasets in AI development.</li>
+                        <li class="flex items-start"><span class="font-bold text-teal-500 mr-2 mt-1">&#10003;</span> Flag AI outputs that may unintentionally exclude or disadvantage vulnerable groups.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Domain 3: Accountability and Responsibility -->
+            <!-- Domain 4: Accountability and Responsibility -->
             <div class="domain-card bg-white rounded-2xl shadow-lg overflow-hidden p-8">
                 <div class="flex-shrink-0 mb-6 flex items-center">
                     <div class="p-3 rounded-full bg-rose-100">
@@ -112,14 +130,14 @@
                 </div>
                 <div class="flex-grow">
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="font-bold text-rose-500 mr-2 mt-1">&#10003;</span> Maintain professional accountability for all decisions, even when using AI.</li>
-                        <li class="flex items-start"><span class="font-bold text-rose-500 mr-2 mt-1">&#10003;</span> Differentiate between AI suggestions and personal clinical judgment.</li>
-                        <li class="flex items-start"><span class="font-bold text-rose-500 mr-2 mt-1">&#10003;</span> Appropriately document AI use within patient or administrative records.</li>
+                        <li class="flex items-start"><span class="font-bold text-rose-500 mr-2 mt-1">&#10003;</span> Maintain professional accountability for clinical and operational decisions, even when AI tools are used.</li>
+                        <li class="flex items-start"><span class="font-bold text-rose-500 mr-2 mt-1">&#10003;</span> Differentiate clearly between AI‑generated suggestions and personal clinical judgment.</li>
+                        <li class="flex items-start"><span class="font-bold text-rose-500 mr-2 mt-1">&#10003;</span> Document AI use appropriately within patient records or administrative systems.</li>
                     </ul>
                 </div>
             </div>
             
-            <!-- Domain 4: Risk Awareness and Mitigation -->
+            <!-- Domain 5: Risk Awareness and Mitigation -->
             <div class="domain-card bg-white rounded-2xl shadow-lg overflow-hidden p-8">
                 <div class="flex-shrink-0 mb-6 flex items-center">
                     <div class="p-3 rounded-full bg-amber-100">
@@ -129,54 +147,53 @@
                 </div>
                 <div class="flex-grow">
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="font-bold text-amber-500 mr-2 mt-1">&#10003;</span> Apply basic risk assessment methods to evaluate AI tools before adoption.</li>
-                        <li class="flex items-start"><span class="font-bold text-amber-500 mr-2 mt-1">&#10003;</span> Identify and respond to performance, safety, or privacy concerns.</li>
+                        <li class="flex items-start"><span class="font-bold text-amber-500 mr-2 mt-1">&#10003;</span> Apply basic risk‑assessment methods to evaluate AI tools before adoption.</li>
+                        <li class="flex items-start"><span class="font-bold text-amber-500 mr-2 mt-1">&#10003;</span> Identify and respond to performance, safety, or privacy concerns associated with AI tools.</li>
                         <li class="flex items-start"><span class="font-bold text-amber-500 mr-2 mt-1">&#10003;</span> Follow governance protocols for monitoring AI tool performance over time.</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Domain 5: AI Capability Literacy -->
+            <!-- Domain 6: Interdisciplinary Collaboration & Governance -->
             <div class="domain-card bg-white rounded-2xl shadow-lg overflow-hidden p-8">
                  <div class="flex-shrink-0 mb-6 flex items-center">
-                    <div class="p-3 rounded-full bg-sky-100">
-                        <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.636-6.364l.707.707M19.071 19.071l-.707-.707M12 21v-1m-6.364-1.636l.707-.707M5.636 5.636l-.707-.707m12.728 12.728l.707.707M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <div class="p-3 rounded-full bg-purple-100">
+                       <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197m0 0A5.995 5.995 0 0012 12a5.995 5.995 0 00-3-5.197M15 21a6 6 0 00-9-5.197"></path></svg>
                     </div>
-                    <h4 class="text-2xl font-bold text-gray-900 ml-4">AI Capability Literacy</h4>
+                    <h4 class="text-2xl font-bold text-gray-900 ml-4">Interdisciplinary Collaboration & Governance</h4>
                 </div>
                 <div class="flex-grow">
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="font-bold text-sky-500 mr-2 mt-1">&#10003;</span> Explain fundamental AI concepts like machine learning and training data.</li>
-                        <li class="flex items-start"><span class="font-bold text-sky-500 mr-2 mt-1">&#10003;</span> Critically evaluate AI-generated recommendations for accuracy and reliability.</li>
-                        <li class="flex items-start"><span class="font-bold text-sky-500 mr-2 mt-1">&#10003;</span> Integrate AI information into workflows with appropriate human oversight.</li>
+                        <li class="flex items-start"><span class="font-bold text-purple-500 mr-2 mt-1">&#10003;</span> Work with data scientists, regulators, and ethics boards during AI evaluation and rollout.</li>
+                        <li class="flex items-start"><span class="font-bold text-purple-500 mr-2 mt-1">&#10003;</span> Help build or serve on AI oversight committees.</li>
+                        <li class="flex items-start"><span class="font-bold text-purple-500 mr-2 mt-1">&#10003;</span> Escalate technical or ethical issues promptly to the appropriate stakeholder.</li>
                     </ul>
-                </div>
-            </div>
-
-            <!-- Resources Card -->
-            <div class="domain-card bg-slate-700 text-white rounded-2xl shadow-lg overflow-hidden p-8">
-                 <div class="flex-shrink-0 mb-6 flex items-center">
-                    <div class="p-3 rounded-full bg-slate-600">
-                       <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
-                    </div>
-                    <h4 class="text-2xl font-bold text-white ml-4">Resources</h4>
-                </div>
-                <div class="flex-grow flex flex-col justify-center space-y-4">
-                    <a href="checklist.html" class="resource-btn w-full text-center bg-indigo-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-600">
-                        Responsible AI Use Checklist
-                    </a>
-                    <a href="use-cases.html" class="resource-btn w-full text-center bg-teal-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-teal-600">
-                        AI Use Case Examples
-                    </a>
-                    <a href="policy-guide.html" class="resource-btn w-full text-center bg-slate-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-slate-600">
-                        Institutional Policy Guide
-                    </a>
                 </div>
             </div>
 
         </div>
       </div>
     </main>
+
+    <!-- Resources Section -->
+    <section class="bg-slate-700">
+        <div class="container mx-auto px-6 py-12 md:py-16">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-white">View Resources</h3>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="checklist.html" class="resource-btn w-full md:w-auto text-center bg-indigo-500 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-600">
+                    Responsible AI Use Checklist
+                </a>
+                <a href="use-cases.html" class="resource-btn w-full md:w-auto text-center bg-teal-500 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-teal-600">
+                    AI Use Case Examples
+                </a>
+                <a href="policy-guide.html" class="resource-btn w-full md:w-auto text-center bg-slate-500 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-slate-600">
+                    Institutional Policy Guide
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer / Note Section -->
     <footer class="bg-gray-200 border-t border-gray-300">
