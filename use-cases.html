@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Use Case Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+        }
+        .title-font {
+            font-family: 'Source Serif 4', serif;
+        }
+        .back-link {
+            transition: color 0.2s ease-in-out;
+        }
+        .back-link:hover {
+            color: #4f46e5; /* Indigo 600 */
+        }
+        .use-case-card {
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">AI in TCM: Resources</h1>
+            <a href="index.html" class="back-link text-sm font-semibold text-slate-600 flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Back to Framework
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+        
+        <!-- Page Title -->
+        <div class="max-w-4xl mx-auto text-center mb-12 md:mb-16">
+            <h2 class="title-font text-4xl md:text-5xl font-bold text-slate-900">AI Use Case Scenarios</h2>
+            <p class="mt-4 text-lg text-slate-600">These examples are for awareness and critical thinking, not as a guide for specific tools. Practitioner judgment is paramount.</p>
+        </div>
+
+        <!-- Use Cases Section -->
+        <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+
+            <!-- Appropriate -->
+            <div class="use-case-card border-l-8 border-green-500">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-green-100 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    </div>
+                    <h3 class="title-font text-2xl font-semibold text-green-800">Appropriate Use</h3>
+                </div>
+                <ul class="space-y-3 list-disc list-inside text-slate-700">
+                    <li>Using an AI-powered language translation tool to assist patient communication during consultations, while ensuring the patient understands it's an assistive technology.</li>
+                    <li>Employing an AI system for literature review or treatment planning support, with practitioner oversight and final clinical judgment.</li>
+                </ul>
+            </div>
+
+            <!-- Requires Caution -->
+            <div class="use-case-card border-l-8 border-amber-500">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-amber-100 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z" /></svg>
+                    </div>
+                    <h3 class="title-font text-2xl font-semibold text-amber-800">Requires Caution</h3>
+                </div>
+                <ul class="space-y-3 list-disc list-inside text-slate-700">
+                    <li>Using AI-generated acupoint recommendations without verifying alignment with patient presentation and TCM pattern differentiation.</li>
+                    <li>Relying on AI-generated herbal formula suggestions without thorough practitioner evaluation of herb-drug interactions, contraindications, and individual patient needs.</li>
+                </ul>
+            </div>
+
+            <!-- Inappropriate -->
+            <div class="use-case-card border-l-8 border-red-500">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-red-100 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </div>
+                    <h3 class="title-font text-2xl font-semibold text-red-800">Inappropriate Use</h3>
+                </div>
+                <ul class="space-y-3 list-disc list-inside text-slate-700">
+                    <li>Allowing an AI system to make independent treatment decisions without human validation.</li>
+                    <li>Using AI for pulse diagnosis or tongue analysis without direct practitioner interpretation and physical confirmation.</li>
+                    <li>Failing to inform patients that AI technologies are involved in their care or data processing.</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
